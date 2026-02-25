@@ -54,7 +54,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="section-label mb-4"
           >
-            Australian Precision Manufacturing
+            Precision Parts
           </motion.p>
 
           {/* Main headline */}

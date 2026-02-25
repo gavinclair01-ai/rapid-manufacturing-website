@@ -11,25 +11,25 @@
     --card-foreground: 220 30% 94%;
     --popover: 228 30% 10%;
     --popover-foreground: 220 30% 94%;
-    --primary: 18 100% 54%;
+    --primary: 200 35% 58%;
     --primary-foreground: 0 0% 100%;
     --secondary: 228 28% 16%;
     --secondary-foreground: 220 30% 94%;
     --muted: 228 28% 14%;
     --muted-foreground: 220 15% 55%;
-    --accent: 18 100% 54%;
+    --accent: 200 35% 58%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 228 25% 20%;
     --input: 228 25% 16%;
-    --ring: 18 100% 54%;
+    --ring: 200 35% 58%;
     --radius: 0.25rem;
 
     /* Custom RM brand tokens */
-    --rm-orange: #FF5C1A;
-    --rm-orange-dim: #cc4912;
-    --rm-orange-glow: rgba(255, 92, 26, 0.20);
+    --rm-orange: #7EB8CE;
+    --rm-orange-dim: #5A9AB5;
+    --rm-orange-glow: rgba(126, 184, 206, 0.20);
     --rm-navy: #0A0E1C;
     --rm-surface: #111520;
     --rm-surface-2: #181D2E;
