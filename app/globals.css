@@ -4,57 +4,41 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    /* Industrial dark theme for Rapid Manufacturing */
+    --background: 228 41% 7%;
+    --foreground: 220 30% 94%;
+    --card: 228 30% 10%;
+    --card-foreground: 220 30% 94%;
+    --popover: 228 30% 10%;
+    --popover-foreground: 220 30% 94%;
+    --primary: 18 100% 54%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 228 28% 16%;
+    --secondary-foreground: 220 30% 94%;
+    --muted: 228 28% 14%;
+    --muted-foreground: 220 15% 55%;
+    --accent: 18 100% 54%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
-    --chart-1: 12 76% 61%;
-    --chart-2: 173 58% 39%;
-    --chart-3: 197 37% 24%;
-    --chart-4: 43 74% 66%;
-    --chart-5: 27 87% 67%;
-    --radius: 0.5rem;
-  }
-  .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    --border: 228 25% 20%;
+    --input: 228 25% 16%;
+    --ring: 18 100% 54%;
+    --radius: 0.25rem;
+
+    /* Custom RM brand tokens */
+    --rm-orange: #FF5C1A;
+    --rm-orange-dim: #cc4912;
+    --rm-orange-glow: rgba(255, 92, 26, 0.20);
+    --rm-navy: #0A0E1C;
+    --rm-surface: #111520;
+    --rm-surface-2: #181D2E;
+    --rm-surface-3: #1F2540;
+    --rm-border: #262E48;
+    --rm-steel: #8A9BC0;
+    --rm-text: #EEF0F8;
+    --rm-muted: #6A7A9A;
+    --rm-grid-line: rgba(38, 46, 72, 0.7);
   }
 }
 
@@ -64,10 +48,174 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-color: var(--rm-navy);
+    font-family: var(--font-outfit), system-ui, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-barlow-condensed), system-ui, sans-serif;
+    letter-spacing: 0.01em;
   }
 }
 
-/* Hide Next.js badge and error messages */
+/* Hide Next.js badge */
 body nextjs-portal {
   display: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--rm-navy);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--rm-border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--rm-steel);
+}
+
+/* Grid background pattern */
+.bg-grid {
+  background-image: 
+    linear-gradient(var(--rm-grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--rm-grid-line) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Noise texture overlay */
+.bg-noise::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Orange glow button */
+.btn-orange {
+  background: var(--rm-orange);
+  color: white;
+  font-family: var(--font-barlow-condensed), sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+.btn-orange::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.12) 0%, transparent 60%);
+  pointer-events: none;
+}
+.btn-orange:hover {
+  background: var(--rm-orange-dim);
+  box-shadow: 0 0 30px var(--rm-orange-glow);
+  transform: translateY(-1px);
+}
+
+/* Ghost button */
+.btn-ghost-orange {
+  border: 1px solid var(--rm-orange);
+  color: var(--rm-orange);
+  font-family: var(--font-barlow-condensed), sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+.btn-ghost-orange:hover {
+  background: var(--rm-orange-glow);
+  box-shadow: 0 0 20px var(--rm-orange-glow);
+}
+
+/* Service card hover */
+.service-card {
+  background: var(--rm-surface);
+  border: 1px solid var(--rm-border);
+  transition: all 0.25s ease;
+}
+.service-card:hover {
+  border-color: var(--rm-orange);
+  box-shadow: 0 0 30px var(--rm-orange-glow);
+  transform: translateY(-3px);
+}
+
+/* Stat counter */
+.stat-number {
+  font-family: var(--font-barlow-condensed), sans-serif;
+  font-weight: 800;
+  line-height: 1;
+  background: linear-gradient(135deg, #fff 0%, var(--rm-steel) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Orange accent line */
+.orange-line {
+  width: 48px;
+  height: 3px;
+  background: var(--rm-orange);
+}
+
+/* Section label */
+.section-label {
+  font-family: var(--font-barlow-condensed), sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--rm-orange);
+  font-size: 0.85rem;
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes countUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.7s ease forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.7s ease forwards;
+}
+
+.animate-slide-right {
+  animation: slideRight 0.7s ease forwards;
 }

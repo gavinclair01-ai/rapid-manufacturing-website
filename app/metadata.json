@@ -1,6 +1,30 @@
 {
   "/": {
-    "title": "Macaly Template Starter",
-    "description": "A website built with Macaly"
+    "title": "Rapid Manufacturing Australia — From Prototype to Production",
+    "description": "Precision manufacturing services in Australia. CNC machining, sheet metal fabrication, 3D printing, injection molding and more. Audited global supplier network. Request a quote in 2 business days.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/new-logo.png"
+    }
+  },
+  "/capabilities": {
+    "title": "Manufacturing Capabilities — Rapid Manufacturing Australia",
+    "description": "Full range of advanced manufacturing capabilities including CNC milling, turning, EDM, wire EDM, precision grinding, die casting, laser cutting, 3D printing and more.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/manufacturing-img.png"
+    }
+  },
+  "/contact": {
+    "title": "Contact Us — Rapid Manufacturing Australia",
+    "description": "Get in touch with Rapid Manufacturing. Email sales@rapidmanufacturing.com.au or fill in our contact form for precision manufacturing enquiries.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/new-logo.png"
+    }
+  },
+  "/quote": {
+    "title": "Request a Quote — Rapid Manufacturing Australia",
+    "description": "Upload your design files for a free DFM analysis. Quotations provided within 2 business days from our audited Australian and international supplier network.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/new-logo.png"
+    }
   }
 }

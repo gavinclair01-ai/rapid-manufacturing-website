@@ -9,10 +9,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'barlow': ['var(--font-barlow-condensed)', 'system-ui', 'sans-serif'],
+        'outfit': ['var(--font-outfit)', 'system-ui', 'sans-serif'],
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       borderRadius: {
         lg: 'var(--radius)',
@@ -60,23 +63,25 @@ const config: Config = {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
+        // RM brand colors
+        'rm-orange': 'var(--rm-orange)',
+        'rm-navy': 'var(--rm-navy)',
+        'rm-surface': 'var(--rm-surface)',
+        'rm-surface-2': 'var(--rm-surface-2)',
+        'rm-surface-3': 'var(--rm-surface-3)',
+        'rm-border': 'var(--rm-border)',
+        'rm-steel': 'var(--rm-steel)',
+        'rm-text': 'var(--rm-text)',
+        'rm-muted': 'var(--rm-muted)',
       },
       keyframes: {
         'accordion-down': {
-          from: {
-            height: '0',
-          },
-          to: {
-            height: 'var(--radix-accordion-content-height)',
-          },
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' },
         },
         'accordion-up': {
-          from: {
-            height: 'var(--radix-accordion-content-height)',
-          },
-          to: {
-            height: '0',
-          },
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' },
         },
       },
       animation: {

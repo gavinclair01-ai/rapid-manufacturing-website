@@ -1,0 +1,49 @@
+{
+  "todos": [
+    {
+      "id": "1",
+      "content": "Build the homepage",
+      "description": "Full redesign of the homepage with hero, services grid, about section, stats, supplier CTA, and footer",
+      "status": "completed",
+      "blocks": [],
+      "blockedBy": [],
+      "metadata": {}
+    },
+    {
+      "id": "2",
+      "content": "Build the Capabilities page",
+      "description": "Full capabilities/services listing page showing all 14 services with descriptions, images, and request a quote links. URL: /capabilities",
+      "status": "pending",
+      "blocks": [],
+      "blockedBy": [],
+      "metadata": {}
+    },
+    {
+      "id": "3",
+      "content": "Build the Contact Us page",
+      "description": "Contact page with full name, email, phone, subject, address, message form. Contact email: sales@rapidmanufacturing.com.au. URL: /contact",
+      "status": "pending",
+      "blocks": [],
+      "blockedBy": [],
+      "metadata": {}
+    },
+    {
+      "id": "4",
+      "content": "Build the Request a Quote page",
+      "description": "Quote request page with file upload capability, service type selection, quantity, material, and other project details. URL: /quote",
+      "status": "pending",
+      "blocks": [],
+      "blockedBy": [],
+      "metadata": {}
+    },
+    {
+      "id": "5",
+      "content": "Build individual service pages (14 pages)",
+      "description": "Each service gets its own page. Services: CNC Milling, CNC Turning, EDM Machining, Wire EDM, Precision Grinding, Gear & Spline Cutting, 5-Axis Machining, Die Casting, Aluminum Extrusion, Laser Cutting, CMM Inspection, Injection Molding, Sheet Metal Fabrication, 3D Printing. URL pattern: /services/[slug]",
+      "status": "pending",
+      "blocks": [],
+      "blockedBy": ["2"],
+      "metadata": {}
+    }
+  ]
+}
