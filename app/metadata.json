@@ -26,5 +26,103 @@
     "openGraph": {
       "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/new-logo.png"
     }
+  },
+  "/service/cnc-milling": {
+    "title": "CNC Milling | Rapid Manufacturing Australia",
+    "description": "3 to 5-axis precision CNC milling for complex geometries. Aluminium, steel, titanium, plastics. Tolerances to ±0.01mm. Sourced from our global network of audited suppliers.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/CNC-Milling-1.png"
+    }
+  },
+  "/service/cnc-turning": {
+    "title": "CNC Turning | Rapid Manufacturing Australia",
+    "description": "2 to 5-axis precision turning with live tooling. Aluminium, steel, titanium, Inconel. Tolerances to ±0.01mm. Sourced from our global network of audited suppliers.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/CNC-Turning-1.png"
+    }
+  },
+  "/service/precision-grinding": {
+    "title": "Precision Grinding | Rapid Manufacturing Australia",
+    "description": "Surface, cylindrical, and centreless grinding. Tolerances to ±0.002mm. Surface finish to Ra 0.2µm. Sourced from our global network of audited suppliers.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/Grinding-1.png"
+    }
+  },
+  "/service/5-axis-machining": {
+    "title": "5-Axis Machining | Rapid Manufacturing Australia",
+    "description": "Simultaneous 5-axis contouring for complex aerospace and medical components. Tolerances to ±0.01mm. Sourced from our global network of audited suppliers.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/5-Axis.png"
+    }
+  },
+  "/service/edm": {
+    "title": "EDM Machining | Rapid Manufacturing Australia",
+    "description": "Electrical Discharge Machining for hardened materials. Dies, moulds, aerospace components. Tolerances to ±0.005mm. Sourced from our global network of audited suppliers.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/EDM-1.png"
+    }
+  },
+  "/service/wire-edm": {
+    "title": "Wire EDM | Rapid Manufacturing Australia",
+    "description": "Intricate 2D profiles and taper cuts with no cutting force. Tolerances to ±0.002mm. Sourced from our global network of audited suppliers.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/Wire-EDM.png"
+    }
+  },
+  "/service/gear-and-spline-cutting": {
+    "title": "Gear & Spline Cutting | Rapid Manufacturing Australia",
+    "description": "Gear hobbing, shaping, and profile grinding for spur, helical, and worm gears. DIN and AGMA standards. Sourced from our global network of audited suppliers.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/Gear-Spline-Cutting.png"
+    }
+  },
+  "/service/die-casting": {
+    "title": "Die Casting | Rapid Manufacturing Australia",
+    "description": "High-pressure aluminium and zinc die casting for high-volume production. Min 500 pieces. Sourced from our global network of audited suppliers.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/Die-Casting-1.png"
+    }
+  },
+  "/service/aluminum-extrusion": {
+    "title": "Aluminum Extrusion | Rapid Manufacturing Australia",
+    "description": "Standard and custom aluminium extrusion profiles. 6061, 6063, 7075 alloys. Anodising and powder coating. Sourced from our global network of audited suppliers.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/Aluminum-Extrusion-1.png"
+    }
+  },
+  "/service/injection-molding": {
+    "title": "Injection Molding | Rapid Manufacturing Australia",
+    "description": "Thermoplastic injection molding for high-volume plastic parts. ABS, PP, PC, Nylon, PEEK. Sourced from our global network of audited suppliers.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/cmc-machine.png"
+    }
+  },
+  "/service/laser-cutting": {
+    "title": "Laser Cutting | Rapid Manufacturing Australia",
+    "description": "Fibre and CO₂ laser cutting for precision sheet metal. Steel, stainless, aluminium up to 25mm. Sourced from our global network of audited suppliers.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/Laser-Cutting-1.png"
+    }
+  },
+  "/service/sheet-metal-fabrication": {
+    "title": "Sheet Metal Fabrication | Rapid Manufacturing Australia",
+    "description": "Laser cutting, CNC bending, welding, and powder coating. 0.5–10mm thickness. Sourced from our global network of audited suppliers.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/Sheet-Metal.png"
+    }
+  },
+  "/service/cmm-inspection": {
+    "title": "CMM Inspection | Rapid Manufacturing Australia",
+    "description": "Coordinate Measuring Machine inspection with full GD&T reporting. Accuracy to 1 micron. Sourced from our global network of audited suppliers.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/CMM-Inspection.png"
+    }
+  },
+  "/service/3d-printing": {
+    "title": "3D Printing | Rapid Manufacturing Australia",
+    "description": "SLA, SLS, FDM, and metal 3D printing. Resins, nylon, titanium, aluminium. From 24 hours. Sourced from our global network of audited suppliers.",
+    "openGraph": {
+      "images": "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/imgg1.png"
+    }
   }
 }

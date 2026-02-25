@@ -12,8 +12,17 @@
     {
       "id": "2",
       "content": "Build the Capabilities page",
-      "description": "Full capabilities/services listing page showing all 14 services with descriptions, images, and request a quote links. URL: /capabilities",
-      "status": "pending",
+      "description": "Full capabilities/services listing page showing all 14 services grouped by category with descriptions, images, and links to individual service pages. URL: /capabilities",
+      "status": "completed",
+      "blocks": [],
+      "blockedBy": [],
+      "metadata": {}
+    },
+    {
+      "id": "5",
+      "content": "Build individual service pages (14 pages)",
+      "description": "Dynamic route /service/[slug] with full service detail layout including specs, what we source, materials, lead times, applications, and CTA. All 14 services complete.",
+      "status": "completed",
       "blocks": [],
       "blockedBy": [],
       "metadata": {}
@@ -34,15 +43,6 @@
       "status": "pending",
       "blocks": [],
       "blockedBy": [],
-      "metadata": {}
-    },
-    {
-      "id": "5",
-      "content": "Build individual service pages (14 pages)",
-      "description": "Each service gets its own page. Services: CNC Milling, CNC Turning, EDM Machining, Wire EDM, Precision Grinding, Gear & Spline Cutting, 5-Axis Machining, Die Casting, Aluminum Extrusion, Laser Cutting, CMM Inspection, Injection Molding, Sheet Metal Fabrication, 3D Printing. URL pattern: /services/[slug]",
-      "status": "pending",
-      "blocks": [],
-      "blockedBy": ["2"],
       "metadata": {}
     }
   ]
