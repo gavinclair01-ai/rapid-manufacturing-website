@@ -71,9 +71,15 @@ export default function SiteFooter() {
 
         {/* Bottom bar */}
         <div className="pt-6 border-t border-[var(--rm-border)] flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-[var(--rm-muted)] text-xs font-outfit">
-            © 2024 Rapid Manufacturing. All Rights Reserved.
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-3">
+            <p className="text-[var(--rm-muted)] text-xs font-outfit">
+              © 2025 Rapid Manufacturing. All Rights Reserved.
+            </p>
+            <span className="hidden sm:block text-[var(--rm-border)]">|</span>
+            <p className="text-[var(--rm-muted)] text-xs font-outfit">
+              ABN 81 994 894 894 143
+            </p>
+          </div>
           <div className="flex items-center gap-1">
             <div className="w-1.5 h-1.5 rounded-full bg-[var(--rm-orange)]" />
             <p className="text-[var(--rm-muted)] text-xs font-outfit">
