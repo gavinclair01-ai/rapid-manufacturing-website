@@ -31,13 +31,13 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16 sm:h-20">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-24 sm:h-28">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
           <img
             src="/images/new-logo.png"
             alt="Rapid Manufacturing"
-            className="h-10 sm:h-12 w-auto object-contain"
+            className="h-20 sm:h-24 w-auto object-contain"
           />
         </Link>
 

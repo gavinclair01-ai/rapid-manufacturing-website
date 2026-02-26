@@ -19,7 +19,7 @@ export default function SiteFooter() {
               <img
                 src="/images/new-logo.png"
                 alt="Rapid Manufacturing"
-                className="h-14 w-auto object-contain"
+                className="h-28 w-auto object-contain"
               />
             </Link>
             <p className="text-[var(--rm-muted)] text-sm leading-relaxed font-outfit max-w-xs">
