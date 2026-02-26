@@ -9,42 +9,42 @@ import { useRef } from "react";
 const services = [
   {
     name: "CNC Milling",
-    image: "/images/CNC-Milling-1.png",
+    image: "/images/CNC-Milling-1.jpg",
     description: "High-precision milling from our audited global supplier network. Complex geometries, tight tolerances, any material.",
   },
   {
     name: "CNC Turning",
-    image: "/images/CNC-Turning-1.png",
+    image: "/images/CNC-Turning-1.jpg",
     description: "Precision turned parts — shafts, bushings, sleeves, flanges and all manner of cylindrical components.",
   },
   {
     name: "EDM Machining",
-    image: "/images/EDM-1.png",
+    image: "/images/EDM-1.jpg",
     description: "Controlled electrical sparks erode material with extreme precision — cutting shapes that conventional tools cannot.",
   },
   {
     name: "Wire EDM",
-    image: "/images/Wire-EDM.png",
+    image: "/images/Wire-EDM.jpg",
     description: "Fine electrically charged wire cuts precise profiles through conductive materials with no cutting force.",
   },
   {
     name: "Sheet Metal Fabrication",
-    image: "/images/Sheet-Metal.png",
+    image: "/images/Sheet-Metal.jpg",
     description: "From simple brackets to complex enclosures. Cutting, bending, forming and welding in any material.",
   },
   {
     name: "3D Printing",
-    image: "/images/imgg1.png",
+    image: "/images/imgg1.jpg",
     description: "Industrial-grade 3D printing from rapid prototypes to end-use production parts, all technologies available.",
   },
   {
     name: "5-Axis Machining",
-    image: "/images/5-Axis.png",
+    image: "/images/5-Axis.jpg",
     description: "Complex geometries machined in a single setup — reducing handling, improving accuracy, and cutting lead times.",
   },
   {
     name: "Die Casting",
-    image: "/images/Die-Casting-1.png",
+    image: "/images/Die-Casting-1.jpg",
     description: "Molten metal forced into steel moulds under high pressure — dimensionally accurate, high-volume components.",
   },
 ];
