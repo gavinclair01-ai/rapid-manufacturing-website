@@ -87,7 +87,7 @@ export const services: Service[] = [
     name: "5-Axis Machining",
     shortDescription: "Simultaneous 5-axis contouring for complex aerospace and medical components.",
     description: "Rapid Manufacturing sources complex 5-axis machining through our audited global supplier network. Simultaneous 5-axis contouring enables undercuts, compound angles, and tight-tolerance aerospace and medical parts machined in a single setup.",
-    image: "/images/5-Axis.jpg",
+    image: "/images/about-img2.png",
     whatWeSource: [
       "Simultaneous 5-axis contouring and positioning",
       "Complex 3D geometry in a single setup",
@@ -222,7 +222,7 @@ export const services: Service[] = [
     name: "Injection Molding",
     shortDescription: "Thermoplastic injection molding for high-volume plastic parts production.",
     description: "Rapid Manufacturing sources thermoplastic injection moulding for high-volume plastic parts through our audited global supplier network. Mould design and manufacture included as part of our complete service.",
-    image: "/images/cmc-machine.png",
+    image: "/images/Injection-Molding.jpg",
     whatWeSource: [
       "Thermoplastic injection moulding",
       "Mould design and manufacture",
@@ -289,7 +289,7 @@ export const services: Service[] = [
     name: "CMM Inspection",
     shortDescription: "Coordinate Measuring Machine inspection with full GD&T reporting.",
     description: "Rapid Manufacturing sources CMM (Coordinate Measuring Machine) inspection through our audited global supplier network. Full dimensional verification of manufactured parts with detailed reporting.",
-    image: "/images/CMM-Inspection.jpg",
+    image: "/images/about-img.png",
     whatWeSource: [
       "3D coordinate measurement and verification",
       "Full GD&T reporting and analysis",

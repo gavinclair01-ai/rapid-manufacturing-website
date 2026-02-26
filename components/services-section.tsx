@@ -39,7 +39,7 @@ const services = [
   },
   {
     name: "5-Axis Machining",
-    image: "/images/5-Axis.jpg",
+    image: "/images/about-img2.png",
     description: "Complex geometries machined in a single setup — reducing handling, improving accuracy, and cutting lead times.",
   },
   {
