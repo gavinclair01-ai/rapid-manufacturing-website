@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
 
     await resend.emails.send({
       from: "Rapid Manufacturing Website <noreply@rapidmanufacturing.com.au>",
-      to: "sales@rapidmanufacturing.com.au",
+      to: "gavinclair01@gmail.com",
       replyTo: email,
       subject: `New Quote Request — ${company || name} (${service || "General"})`,
       html: `
