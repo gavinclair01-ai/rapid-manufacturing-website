@@ -99,7 +99,7 @@ export default function SupplierCta() {
         >
           <div className="rounded-sm overflow-hidden border border-[var(--rm-border)]">
             <img
-              src="https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/footer-img2.png"
+              src="/images/footer-img2.png"
               alt="Precision machined parts"
               className="w-full object-contain bg-[var(--rm-surface-3)] p-6"
             />

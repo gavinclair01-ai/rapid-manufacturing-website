@@ -28,7 +28,7 @@ export default function Hero() {
       {/* Background gear image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/main-banner-image-1.png"
+          src="/images/main-banner-image-1.png"
           alt=""
           className="absolute right-0 top-0 h-full w-[55%] object-cover object-left"
           style={{

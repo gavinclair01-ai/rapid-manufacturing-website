@@ -17,7 +17,7 @@ export default function SiteFooter() {
           <div>
             <Link href="/" className="inline-block mb-4">
               <img
-                src="https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/new-logo.png"
+                src="/images/new-logo.png"
                 alt="Rapid Manufacturing"
                 className="h-14 w-auto object-contain"
               />

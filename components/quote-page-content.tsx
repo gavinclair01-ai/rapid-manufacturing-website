@@ -27,9 +27,17 @@ export default function QuotePageContent() {
 
   const removeFile = (i: number) => setFiles((prev) => prev.filter((_, idx) => idx !== i));
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Quote form submitted:", { ...form, files: files.map((f) => f.name) });
+    try {
+      await fetch("/api/quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ...form, files: files.map((f) => f.name) }),
+      });
+    } catch (err) {
+      console.error("Quote submission error:", err);
+    }
     setSubmitted(true);
   };
 

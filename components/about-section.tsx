@@ -38,7 +38,7 @@ export default function AboutSection() {
             {/* Main image */}
             <div className="rounded-sm overflow-hidden border border-[var(--rm-border)] shadow-2xl">
               <img
-                src="https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/about-img2.png"
+                src="/images/about-img2.png"
                 alt="Precision manufacturing"
                 className="w-full aspect-[4/3] object-cover"
               />
@@ -52,7 +52,7 @@ export default function AboutSection() {
               className="absolute -bottom-8 -right-6 w-2/3 rounded-sm overflow-hidden border-2 border-[var(--rm-orange)] shadow-[0_0_40px_var(--rm-orange-glow)]"
             >
               <img
-                src="https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/about-img.png"
+                src="/images/about-img.png"
                 alt="CMM inspection"
                 className="w-full aspect-[4/3] object-cover"
               />

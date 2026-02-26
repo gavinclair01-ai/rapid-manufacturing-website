@@ -35,7 +35,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
           <img
-            src="https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/new-logo.png"
+            src="/images/new-logo.png"
             alt="Rapid Manufacturing"
             className="h-10 sm:h-12 w-auto object-contain"
           />

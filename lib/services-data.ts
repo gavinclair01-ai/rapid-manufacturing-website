@@ -19,7 +19,7 @@ export const services: Service[] = [
     name: "CNC Milling",
     shortDescription: "3 to 5-axis precision milling for complex geometries and tight tolerances.",
     description: "Rapid Manufacturing sources high-precision CNC milling from our audited global supplier network, managed from Australia. We match your job to the most capable supplier and manage the process end-to-end.",
-    image: "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/CNC-Milling-1.png",
+    image: "/images/CNC-Milling-1.png",
     whatWeSource: [
       "3-axis, 4-axis, and 5-axis CNC milling",
       "Complex geometries, pockets, contours, and tight-tolerance features",
@@ -41,7 +41,7 @@ export const services: Service[] = [
     name: "CNC Turning",
     shortDescription: "2 to 5-axis precision turning with live tooling and sub-spindle operations.",
     description: "Rapid Manufacturing sources CNC turning through our audited global supplier network. From simple shafts to complex multi-axis turned components, we deliver precision and consistency managed from Australia.",
-    image: "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/CNC-Turning-1.png",
+    image: "/images/CNC-Turning-1.png",
     whatWeSource: [
       "2-axis through to full 5-axis turn-mill",
       "Live tooling and sub-spindle operations",
@@ -63,7 +63,7 @@ export const services: Service[] = [
     name: "Precision Grinding",
     shortDescription: "Surface, cylindrical, and centreless grinding for ultra-tight tolerances.",
     description: "Rapid Manufacturing sources precision grinding through our audited global supplier network. When tolerances and surface finish demands exceed what milling or turning can achieve, grinding delivers.",
-    image: "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/Grinding-1.png",
+    image: "/images/Grinding-1.png",
     whatWeSource: [
       "Surface grinding (flat, stepped, and angular)",
       "Cylindrical grinding (OD and ID)",
@@ -87,7 +87,7 @@ export const services: Service[] = [
     name: "5-Axis Machining",
     shortDescription: "Simultaneous 5-axis contouring for complex aerospace and medical components.",
     description: "Rapid Manufacturing sources complex 5-axis machining through our audited global supplier network. Simultaneous 5-axis contouring enables undercuts, compound angles, and tight-tolerance aerospace and medical parts machined in a single setup.",
-    image: "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/5-Axis.png",
+    image: "/images/5-Axis.png",
     whatWeSource: [
       "Simultaneous 5-axis contouring and positioning",
       "Complex 3D geometry in a single setup",
@@ -109,7 +109,7 @@ export const services: Service[] = [
     name: "EDM Machining",
     shortDescription: "Electrical Discharge Machining for hardened materials and complex cavities.",
     description: "Rapid Manufacturing sources EDM (Electrical Discharge Machining) through our audited global supplier network. Using shaped electrodes, EDM machines hardened materials with exceptional accuracy for dies, moulds, and aerospace components.",
-    image: "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/EDM-1.png",
+    image: "/images/EDM-1.png",
     whatWeSource: [
       "Sinker EDM for complex cavities and profiles",
       "Hardened material machining without heat affect",
@@ -132,7 +132,7 @@ export const services: Service[] = [
     name: "Wire EDM",
     shortDescription: "Intricate 2D profiles and taper cuts with no cutting force on the workpiece.",
     description: "Rapid Manufacturing sources Wire EDM through our audited global supplier network. Using a travelling wire electrode, Wire EDM cuts intricate 2D profiles and taper cuts through conductive material with no cutting force, perfect for delicate or hardened components.",
-    image: "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/Wire-EDM.png",
+    image: "/images/Wire-EDM.png",
     whatWeSource: [
       "Intricate 2D profile cutting",
       "Taper cuts and angled features",
@@ -155,7 +155,7 @@ export const services: Service[] = [
     name: "Gear & Spline Cutting",
     shortDescription: "Gear hobbing, shaping, and profile grinding for power transmission components.",
     description: "Rapid Manufacturing sources gear and spline cutting through our audited global supplier network. From spur gears to complex helical and worm gears, plus precision splines for power transmission applications.",
-    image: "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/Gear-Spline-Cutting.png",
+    image: "/images/Gear-Spline-Cutting.png",
     whatWeSource: [
       "Gear hobbing for spur and helical gears",
       "Gear shaping for internal and special profiles",
@@ -178,7 +178,7 @@ export const services: Service[] = [
     name: "Die Casting",
     shortDescription: "High-pressure aluminium and zinc die casting for high-volume production.",
     description: "Rapid Manufacturing sources high-pressure die casting of aluminium and zinc alloys through our audited global supplier network. Cost-effective net-shape parts for high-volume production runs.",
-    image: "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/Die-Casting-1.png",
+    image: "/images/Die-Casting-1.png",
     whatWeSource: [
       "High-pressure die casting for aluminium and zinc",
       "Die design and manufacture",
@@ -200,7 +200,7 @@ export const services: Service[] = [
     name: "Aluminum Extrusion",
     shortDescription: "Standard and custom profiles from die design to finished components.",
     description: "Rapid Manufacturing sources aluminium extrusion — from standard profiles to custom tooled sections — through our audited global supplier network, managed end-to-end from die design to finished components.",
-    image: "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/Aluminum-Extrusion-1.png",
+    image: "/images/Aluminum-Extrusion-1.png",
     whatWeSource: [
       "Standard and custom aluminium extrusion profiles",
       "Extrusion die design and manufacture",
@@ -222,7 +222,7 @@ export const services: Service[] = [
     name: "Injection Molding",
     shortDescription: "Thermoplastic injection molding for high-volume plastic parts production.",
     description: "Rapid Manufacturing sources thermoplastic injection moulding for high-volume plastic parts through our audited global supplier network. Mould design and manufacture included as part of our complete service.",
-    image: "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/cmc-machine.png",
+    image: "/images/cmc-machine.png",
     whatWeSource: [
       "Thermoplastic injection moulding",
       "Mould design and manufacture",
@@ -244,7 +244,7 @@ export const services: Service[] = [
     name: "Laser Cutting",
     shortDescription: "Fibre and CO₂ laser cutting for precision sheet metal and flat profiles.",
     description: "Rapid Manufacturing sources fibre and CO₂ laser cutting through our audited global supplier network. Precision sheet metal and flat profile cutting with fast turnaround times.",
-    image: "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/Laser-Cutting-1.png",
+    image: "/images/Laser-Cutting-1.png",
     whatWeSource: [
       "Fibre laser cutting for metals",
       "CO₂ laser cutting for non-metals",
@@ -267,7 +267,7 @@ export const services: Service[] = [
     name: "Sheet Metal Fabrication",
     shortDescription: "Laser cutting, CNC bending, welding, and powder coating for metal structures.",
     description: "Rapid Manufacturing sources complete sheet metal fabrication through our audited global supplier network. From laser cutting and CNC bending to welding and powder coating for enclosures, brackets, and structures.",
-    image: "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/Sheet-Metal.png",
+    image: "/images/Sheet-Metal.png",
     whatWeSource: [
       "Laser cutting and punch pressing",
       "CNC press brake bending",
@@ -289,7 +289,7 @@ export const services: Service[] = [
     name: "CMM Inspection",
     shortDescription: "Coordinate Measuring Machine inspection with full GD&T reporting.",
     description: "Rapid Manufacturing sources CMM (Coordinate Measuring Machine) inspection through our audited global supplier network. Full dimensional verification of manufactured parts with detailed reporting.",
-    image: "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/CMM-Inspection.png",
+    image: "/images/CMM-Inspection.png",
     whatWeSource: [
       "3D coordinate measurement and verification",
       "Full GD&T reporting and analysis",
@@ -312,7 +312,7 @@ export const services: Service[] = [
     name: "3D Printing",
     shortDescription: "SLA, SLS, FDM, and metal 3D printing for prototypes and functional parts.",
     description: "Rapid Manufacturing sources 3D printing through our audited global supplier network. SLA, SLS, FDM, and metal 3D printing for prototypes and functional parts with fast turnaround.",
-    image: "https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/imgg1.png",
+    image: "/images/imgg1.png",
     whatWeSource: [
       "SLA resin printing for fine details and smooth surfaces",
       "SLS nylon printing for functional parts",

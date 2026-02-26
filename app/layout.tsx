@@ -1,5 +1,4 @@
 import "./globals.css";
-import { MacalySandboxBridge } from '../.sandbox/sandbox-bridge';
 
 import type { Metadata } from "next";
 import { Barlow_Condensed, Outfit } from "next/font/google";
@@ -29,12 +28,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <MacalySandboxBridge><body
+      <body
         className={`${barlowCondensed.variable} ${outfit.variable} antialiased`}
         suppressHydrationWarning={true}
       >
         {children}
-      </body></MacalySandboxBridge>
+      </body>
     </html>
   );
 }

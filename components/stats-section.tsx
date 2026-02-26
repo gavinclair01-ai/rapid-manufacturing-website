@@ -110,7 +110,7 @@ export default function StatsSection() {
         >
           <div className="bg-[var(--rm-surface)] border border-[var(--rm-border)] rounded-sm overflow-hidden p-6 sm:p-10">
             <img
-              src="https://rapidmanufacturing.com.au/wp-content/uploads/2024/09/world-map-business-infographic_5758202.htmfromViewsearchpage1position1uuidf893f084-81f9-4262-a88d-aa2d87e778af.svg"
+              src="/images/world-map.svg"
               alt="Global manufacturing network"
               className="w-full opacity-60"
               style={{ filter: "brightness(1.5) saturate(0.3)" }}
