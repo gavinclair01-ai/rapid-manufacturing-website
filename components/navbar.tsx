@@ -47,7 +47,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="font-barlow font-600 uppercase tracking-widest text-sm text-[var(--rm-steel)] hover:text-white transition-colors duration-200"
+              className="font-barlow font-600 uppercase tracking-widest text-xl text-white hover:text-[var(--rm-orange)] transition-colors duration-200"
             >
               {link.label}
             </Link>
@@ -88,7 +88,7 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileOpen(false)}
-                  className="font-barlow font-700 uppercase tracking-widest text-sm text-[var(--rm-steel)] hover:text-white py-3 px-3 border-b border-[var(--rm-border)] transition-colors"
+                  className="font-barlow font-700 uppercase tracking-widest text-xl text-white hover:text-[var(--rm-orange)] py-3 px-3 border-b border-[var(--rm-border)] transition-colors"
                 >
                   {link.label}
                 </Link>
