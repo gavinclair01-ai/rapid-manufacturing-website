@@ -11,6 +11,9 @@ export type Service = {
   applications?: string;
   category: 'CNC Machining' | 'Special Processes' | 'Forming & Casting' | 'Fabrication & Finishing' | 'Inspection & Additive';
   specs: { label: string; value: string }[];
+  seoTitle?: string;
+  seoDescription?: string;
+  keywords?: string[];
 };
 
 export const services: Service[] = [
