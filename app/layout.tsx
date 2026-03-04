@@ -20,29 +20,33 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Rapid Manufacturing Australia — CNC Machining & Precision Parts",
+  title: "CNC Machined Components Australia — Rapid Manufacturing",
   description:
-    "Australia's precision manufacturing sourcing specialists. CNC milling, turning, EDM, sheet metal, 3D printing and more. Fast quotes, audited suppliers, Australia-wide.",
+    "Source precision CNC machined components and custom machined parts through Rapid Manufacturing's audited supplier network. CNC milling, turning, EDM, 5-axis, grinding and more. Competitive quotes, Australia-wide.",
   keywords: [
+    "CNC machined components Australia",
+    "precision machined parts Australia",
+    "custom machined components supplier",
     "CNC machining Australia",
     "precision manufacturing Australia",
     "CNC milling Australia",
     "CNC turning Australia",
-    "sheet metal fabrication Australia",
-    "rapid prototyping Australia",
+    "machined parts supplier Australia",
+    "precision parts manufacturer Australia",
+    "custom parts manufacturing Australia",
     "EDM machining Australia",
     "5 axis machining Australia",
-    "custom parts manufacturing Australia",
-    "precision parts supplier Australia",
+    "sheet metal fabrication Australia",
+    "precision components Australia",
   ],
   metadataBase: new URL("https://rapidmanufacturing.com.au"),
   alternates: {
     canonical: "https://rapidmanufacturing.com.au",
   },
   openGraph: {
-    title: "Rapid Manufacturing Australia — CNC Machining & Precision Parts",
+    title: "CNC Machined Components Australia — Rapid Manufacturing",
     description:
-      "Australia's precision manufacturing sourcing specialists. CNC milling, turning, EDM, sheet metal, 3D printing and more. Fast quotes, audited suppliers, Australia-wide.",
+      "Source precision CNC machined components and custom machined parts through Rapid Manufacturing's audited supplier network. CNC milling, turning, EDM, 5-axis and more. Australia-wide.",
     url: "https://rapidmanufacturing.com.au",
     siteName: "Rapid Manufacturing Australia",
     locale: "en_AU",
@@ -58,9 +62,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rapid Manufacturing Australia — CNC Machining & Precision Parts",
+    title: "CNC Machined Components Australia — Rapid Manufacturing",
     description:
-      "Australia's precision manufacturing sourcing specialists. Fast quotes, audited suppliers, Australia-wide.",
+      "Source precision CNC machined components through Rapid Manufacturing's audited supplier network. Competitive quotes, Australia-wide.",
     images: ["/images/og-image.jpg"],
   },
   robots: {

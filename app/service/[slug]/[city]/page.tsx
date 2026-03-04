@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { services } from '@/lib/services-data';
 import { cities, getCityBySlug } from '@/lib/cities-data';
+import { cityIndustryData } from '@/lib/city-industries';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 
@@ -21,8 +22,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const city = getCityBySlug(citySlug);
   if (!service || !city) return {};
 
-  const title = `${service.name} ${city.name} — Rapid Manufacturing ${city.stateShort}`;
-  const description = `${service.name} services in ${city.name}, ${city.state}. Rapid Manufacturing sources precision ${service.name.toLowerCase()} from our audited supplier network — managed from Australia. Fast quotes, reliable delivery to ${city.name}.`;
+  const title = `${service.name} ${city.name} — Precision Machined Components | Rapid Manufacturing`;
+  const description = `Source precision ${service.name.toLowerCase()} components for ${city.name} businesses through Rapid Manufacturing's audited supplier network. Competitive quotes, managed from Australia, delivered to ${city.name} and across ${city.state}.`;
 
   return {
     title,
@@ -30,11 +31,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     keywords: [
       `${service.name.toLowerCase()} ${city.name}`,
       `${service.name.toLowerCase()} ${city.stateShort}`,
+      `${service.name.toLowerCase()} components ${city.name}`,
+      `${service.name.toLowerCase()} parts ${city.name}`,
+      `precision machined components ${city.name}`,
+      `custom machined parts ${city.name}`,
+      `CNC machined components ${city.name}`,
+      `machined parts supplier ${city.name}`,
       `${service.name.toLowerCase()} supplier ${city.name}`,
-      `precision manufacturing ${city.name}`,
-      `CNC machining ${city.name}`,
-      `${service.name.toLowerCase()} services ${city.name}`,
-      `custom parts ${city.name}`,
     ],
     alternates: {
       canonical: `https://rapidmanufacturing.com.au/service/${slug}/${citySlug}`,
@@ -56,11 +59,13 @@ export default async function ServiceCityPage({ params }: Props) {
   const city = getCityBySlug(citySlug);
   if (!service || !city) notFound();
 
+  const cityData = cityIndustryData[city.slug];
+
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: `${service.name} in ${city.name}`,
-    description: `${service.shortDescription} Available to clients in ${city.name}, ${city.state}.`,
+    description: `Source precision ${service.name.toLowerCase()} components for ${city.name} businesses. ${service.shortDescription}`,
     provider: {
       "@type": "Organization",
       name: "Rapid Manufacturing Australia",
@@ -81,12 +86,31 @@ export default async function ServiceCityPage({ params }: Props) {
     url: `https://rapidmanufacturing.com.au/service/${service.slug}/${city.slug}`,
   };
 
+  const faqSchema = cityData ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: cityData.faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  } : null;
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       <main className="min-h-screen bg-[#0a0a0a] text-white">
         {/* Nav */}
         <nav className="border-b border-white/10 px-6 py-4">
@@ -111,11 +135,11 @@ export default async function ServiceCityPage({ params }: Props) {
             </Link>
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            {service.name} in {city.name}, {city.stateShort}
+            {service.name} Components in {city.name}, {city.stateShort}
           </h1>
           <p className="text-xl text-white/70 max-w-2xl mb-8">
-            Rapid Manufacturing sources high-precision {service.name.toLowerCase()} for clients in {city.name} and across {city.state}. 
-            We manage your job end-to-end — from quote to delivery.
+            Rapid Manufacturing sources precision {service.name.toLowerCase()} components for businesses in {city.name} and across {city.state}.
+            We manage your job end-to-end — from quote through to delivery.
           </p>
           <Link
             href="/quote"
@@ -128,10 +152,10 @@ export default async function ServiceCityPage({ params }: Props) {
         {/* Service Details */}
         <section className="px-6 py-12 bg-white/5">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6">{service.name} Services for {city.name} Businesses</h2>
+            <h2 className="text-2xl font-bold mb-6">{service.name} Components for {city.name} Businesses</h2>
             <p className="text-white/70 mb-8 max-w-3xl">
-              {service.description} Whether you&apos;re based in {city.name}&apos;s industrial precincts or anywhere across {city.state}, 
-              we deliver the same precision and reliability with fast turnaround times.
+              {service.description} Whether you&apos;re sourcing one-off prototype parts or ongoing production quantities, 
+              we match your job to the most capable supplier in our network and manage the process from quote to delivery.
             </p>
 
             {service.whatWeSource && service.whatWeSource.length > 0 && (
@@ -172,17 +196,54 @@ export default async function ServiceCityPage({ params }: Props) {
               </div>
             )}
 
-            {service.leadTimes && (
+            {service.applications && (
               <div className="mb-6">
-                <h3 className="text-lg font-semibold mb-2">Lead Times</h3>
-                <p className="text-white/70">{service.leadTimes}</p>
+                <h3 className="text-lg font-semibold mb-2">Common Applications</h3>
+                <p className="text-white/70">{service.applications}</p>
               </div>
             )}
           </div>
         </section>
 
+        {/* City Industry Context */}
+        {cityData && (
+          <section className="px-6 py-12">
+            <div className="max-w-6xl mx-auto">
+              <h2 className="text-2xl font-bold mb-4">
+                {service.name} for {city.name}&apos;s Industries
+              </h2>
+              <p className="text-white/70 mb-8 max-w-3xl">{cityData.intro}</p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="text-lg font-semibold mb-4">Industries We Serve in {city.name}</h3>
+                  <ul className="space-y-2">
+                    {cityData.industries.map((industry, i) => (
+                      <li key={i} className="flex items-center gap-3 text-white/70">
+                        <span className="text-[#f97316]">→</span>
+                        {industry}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold mb-4">Common Parts We Source for {city.name}</h3>
+                  <ul className="space-y-2">
+                    {cityData.commonParts.map((part, i) => (
+                      <li key={i} className="flex items-center gap-3 text-white/70">
+                        <span className="text-[#f97316]">→</span>
+                        {part}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Why Rapid Mfg */}
-        <section className="px-6 py-12">
+        <section className="px-6 py-12 bg-white/5">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl font-bold mb-8">
               Why {city.name} Businesses Choose Rapid Manufacturing
@@ -195,23 +256,23 @@ export default async function ServiceCityPage({ params }: Props) {
                 },
                 {
                   title: 'Australian-Managed',
-                  desc: 'We speak your language, work in your timezone, and understand Australian quality standards and compliance.',
+                  desc: `We work in your timezone, speak your language, and understand Australian quality standards and compliance requirements.`,
                 },
                 {
                   title: 'End-to-End Service',
                   desc: 'From quote to quality inspection to delivery — we manage the whole process so you can focus on your business.',
                 },
                 {
-                  title: 'Fast Turnaround',
-                  desc: 'Typical lead times of 5–15 business days. Rush orders available when you need parts fast.',
+                  title: 'One-Off to Production',
+                  desc: 'Prototype quantities through to full production runs. We scale with your project needs.',
                 },
                 {
                   title: 'Competitive Pricing',
-                  desc: 'Access to global manufacturing rates, managed from {city.name}. Quality without the premium.',
+                  desc: `Access to global manufacturing capability, managed from Australia. Quality without the premium.`,
                 },
                 {
-                  title: 'All Quantities',
-                  desc: 'One-off prototypes to full production runs. We scale with your project needs.',
+                  title: 'Simple to Get Started',
+                  desc: 'Send us your drawings and specifications. We handle the rest.',
                 },
               ].map((item, i) => (
                 <div key={i} className="bg-white/5 rounded-lg p-6">
@@ -223,10 +284,29 @@ export default async function ServiceCityPage({ params }: Props) {
           </div>
         </section>
 
+        {/* FAQ */}
+        {cityData && cityData.faqs.length > 0 && (
+          <section className="px-6 py-12">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-2xl font-bold mb-8">
+                Frequently Asked Questions — {service.name} in {city.name}
+              </h2>
+              <div className="space-y-6">
+                {cityData.faqs.map((faq, i) => (
+                  <div key={i} className="border-b border-white/10 pb-6">
+                    <h3 className="font-semibold mb-2">{faq.question}</h3>
+                    <p className="text-white/60 text-sm leading-relaxed">{faq.answer}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
         {/* Other Cities */}
         <section className="px-6 py-12 bg-white/5">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6">{service.name} Services Across Australia</h2>
+            <h2 className="text-2xl font-bold mb-6">{service.name} Across Australia</h2>
             <div className="flex flex-wrap gap-3">
               {cities
                 .filter((c) => c.slug !== city.slug)
@@ -246,7 +326,7 @@ export default async function ServiceCityPage({ params }: Props) {
         {/* Other Services */}
         <section className="px-6 py-12">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl font-bold mb-6">Other Services in {city.name}</h2>
+            <h2 className="text-2xl font-bold mb-6">More Machined Components for {city.name}</h2>
             <div className="flex flex-wrap gap-3">
               {services
                 .filter((s) => s.slug !== service.slug)
@@ -256,7 +336,7 @@ export default async function ServiceCityPage({ params }: Props) {
                     href={`/service/${s.slug}/${city.slug}`}
                     className="bg-white/10 hover:bg-white/20 text-white/70 hover:text-white px-4 py-2 rounded-lg text-sm transition-colors"
                   >
-                    {s.name}
+                    {s.name} Components
                   </Link>
                 ))}
             </div>
@@ -267,10 +347,10 @@ export default async function ServiceCityPage({ params }: Props) {
         <section className="px-6 py-16 text-center">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">
-              Ready to Source {service.name} in {city.name}?
+              Need {service.name} Components in {city.name}?
             </h2>
             <p className="text-white/60 mb-8">
-              Upload your drawings or describe your requirements — we&apos;ll get back to you with a competitive quote fast.
+              Send us your drawings or describe what you need — we&apos;ll come back with a competitive quote.
             </p>
             <Link
               href="/quote"
